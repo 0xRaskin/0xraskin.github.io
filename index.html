@@ -3,7 +3,17 @@
 
 <head>
     <title>0xRaskin</title>
-    <link rel="icon" href="https://i.ibb.co/7Wgy3R4/photo-2024-01-04-13-26-29.jpg" type="image/jpeg">
+    <link rel="icon" href="https://i.ibb.co/10z9JQx/photo1698935880.jpg" type="image/jpeg">
+    <meta name="description" content="Your website description">
+    <meta name="keywords" content="Keywords related to your website">
+    <meta name="author" content="Your Name">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="0xRaskin">
+    <meta property="og:description" content="Your website description">
+    <meta property="og:image" content="https://i.ibb.co/10z9JQx/photo1698935880.jpg">
+    <meta property="og:url" content="https://x.com/0xRaskin">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://i.ibb.co/10z9JQx/photo1698935880.jpg">
     <style>
         body {
             background-color: #000000;
@@ -16,21 +26,35 @@
             margin: 0;
         }
 
-        @keyframes lol {
-            /* ... (same as before) */
+        @keyframes dotAnimation {
+            0%, 20% {
+                content: ".";
+            }
+            40% {
+                content: "..";
+            }
+            60% {
+                content: "...";
+            }
+            80% {
+                content: "..";
+            }
+            100% {
+                content: ".";
+            }
         }
 
         header {
             text-align: center;
             font-size: 48px;
-            animation: lol 1.9s infinite;
+            animation: dotAnimation 1.5s infinite steps(5);
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1 id="dynamicContent">Loading...</h1>
+        <h1 id="dynamicContent">Loading</h1>
     </header>
 
     <script src="script.js"></script>
