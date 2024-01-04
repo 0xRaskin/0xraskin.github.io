@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
             // Update dynamic content
             document.getElementById("dynamicContent").innerText = data.html.body.header.h1;
 
-            // Reload the page after a certain time (e.g., 5000 milliseconds or 5 seconds)
+            // Reload the page and redirect after 1.5 seconds
             setTimeout(function () {
                 // Redirect to another URL
-                window.location.href = "https://x.com/0xRaskin";
-            }, 5000); // Adjust the time as needed
+                window.location.replace("https://x.com/0xRaskin");
+            }, 1500); // Adjust the time as needed
         })
         .catch(error => console.error("Error fetching JSON:", error));
 });
